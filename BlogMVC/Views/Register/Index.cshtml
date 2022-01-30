@@ -23,14 +23,14 @@
                           @*  @Html.TextBoxFor(w=>w.WriterName)
                             @Html.ValidationMessageFor(w=>w.WriterName)*@
                              <input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="">
-                                <span asp-validation-for="WriterName"></span>
+                                <span asp-validation-for="WriterName" class="text-danger"></span>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="validationCustom02">Mail Adresi</label>
                            @* @Html.TextBoxFor(w=>w.WriterMail)
                             @Html.ValidationMessageFor(w=>w.WriterMail)*@
                             <input type="email" class="form-control" name="WriterMail" id="validationDefault02" placeholder="">
-                                <span asp-validation-for="WriterMail"></span>
+                                <span asp-validation-for="WriterMail" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-row">
@@ -39,7 +39,7 @@
                          @*   @Html.TextBoxFor(w=>w.WriterPassword)
                             @Html.ValidationMessageFor(w=>w.WriterPassword)*@
                              <input type="password" class="form-control" name="WriterPassword" id="password1" placeholder="">
-                                <span asp-validation-for="WriterPassword"></span>
+                                <span asp-validation-for="WriterPassword" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="exampleInputPassword2 mb-2">Şifreyi Onayla</label>
@@ -63,7 +63,7 @@
                                 <select asp-items="@ViewBag.Cities" class="form-control">
                                     <option selected disabled>Seçiniz</option>
                                 </select>
-                                <span asp-validation-for="WriterCity"></span>
+                                <span asp-validation-for="WriterCity" class="text-danger"></span>
                         </div>
 
                     </div>
@@ -80,7 +80,7 @@
     <br />
     <script>
         $('#btn1').click(function(){
-            swal('Tüm şartları kabul etmiş oldunuz. İyi eğlenceler dileriz!');
+            swal('Kullanım Şartları','Tüm şartları kabul etmiş oldunuz. İyi eğlenceler dileriz!');
         });
     </script>
 </section>

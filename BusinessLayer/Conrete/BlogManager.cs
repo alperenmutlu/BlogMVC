@@ -52,5 +52,10 @@ namespace BusinessLayer.Conrete
         {
             throw new NotImplementedException();
         }
+
+        public List<Blog> GetBlogListByWriter(int id)
+        {
+            return _blogDal.GetAllByFilter(x => x.WriterID == id);
+        }
     }
 }
