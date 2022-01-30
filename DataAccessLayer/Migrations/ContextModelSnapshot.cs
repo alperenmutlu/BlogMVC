@@ -174,10 +174,10 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("WriteName")
+                    b.Property<string>("WriterAbout")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("WriterAbout")
+                    b.Property<string>("WriterCity")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("WriterImage")
@@ -186,7 +186,13 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("WriterMail")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("WriterName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("WriterPassword")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WriterPasswordConfirm")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("WriterStatus")
