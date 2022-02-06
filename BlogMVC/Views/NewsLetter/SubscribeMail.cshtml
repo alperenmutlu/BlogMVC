@@ -1,0 +1,17 @@
+﻿@*<script src="~/BlogTema/lib/jquery/dist/jquery.js"></script>
+*@
+<div class="tech-btm">
+    <h4>Mail Bültenine Abone Olun</h4>
+    <p>Teknoloji, yazılım ve diğer bloglar...</p>
+    <form asp-action="SubscribeMail" asp-controller="NewsLetter" method="post">
+        <input type="email" placeholder="Email" required="" name="Mail">
+        <input id="aboneOl" type="submit" value="Abone Ol">
+    </form>
+
+@*
+    <script>
+          $("#aboneOl").click(() => {
+        $.post("https://localhost:44396/NewsLetter/SubscribeMail");
+    });
+    </script>*@
+</div>
